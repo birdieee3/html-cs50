@@ -1,0 +1,155 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+
+        </script>
+        <link href="styles.css" rel="stylesheet">
+
+        <title>My Webpage</title>
+    </head>
+    <body>
+
+      <header>
+        <div class="top-of-page-content">
+          <h2>
+            Homework website!
+          </h2>
+        </div>
+      </header>
+
+      <main>
+        <div class="body-with-content">
+
+          <div class="box-o-text text-first">
+            <h4>
+              My first static site!
+            </h4>
+            <br>
+            <p>
+              This static site was created as a homework assignment for CS50x. Since then I have learned a lot more. I have discovered frameworks, I have more properly learned JS, and I have learned much, <i>much</i> better practices in CSS (and HTML, for that matter)
+            </p>
+            <p>
+              For posterity's sake, and to show off where it all began, here is my original static site.
+            </p>
+            <p>
+              I have chosen the Christian Bible as the topic for my site, because, while not being Christian myself, I do know a few things about it. Thus, I have created neat little overviews relating to it! Below you will find brief summaries of what each of the
+              major sections within the Bible are all about, as well as a non-functional button which would have pertained to other notable early Christian and pre-Christian writings from the time when some of the canonical texts were written.
+              This section would have elaborated on the fluidity of canon in the early days of Christianity and would also have told the reader a bit more about Jewish apocalyptic writings.
+            </p>
+            <p>
+              Anyway, hopefully the design of the below selector buttons is somewhat intuitive, this was probably my first venture into the world of Bootstrap.
+            </p>
+            <button class="mode-toggle">
+              testing dark mode
+            </button>
+            <p style="font-size:75%">
+              (technically works across pages, but runs into wonky css there, so please toggle back off before proceeding)
+            </p>
+            </div>
+
+          <div class="row canon-selector">
+            <br>
+            <div class="col-5">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-zero-list" data-bs-toggle="list" href="#list-zero" role="tab" aria-controls="list-zero">The "Bible"?</a>
+                <a class="list-group-item list-group-item-action" id="list-one-list" data-bs-toggle="list" href="#list-one" role="tab" aria-controls="list-one">Hebrew Bible</a>
+                <a class="list-group-item list-group-item-action" id="list-two-list" data-bs-toggle="list" href="#list-two" role="tab" aria-controls="list-two">Apocrypha</a>
+                <a class="list-group-item list-group-item-action" id="list-three-list" data-bs-toggle="list" href="#list-three" role="tab" aria-controls="list-three">New Testament</a>
+                <button class="list-group-item list-group-item-action" id="list-four-list" data-bs-toggle="list" role="tab" aria-controls="list-four" disabled>non-canonical writings</button>
+              </div>
+            </div>
+            <div class="col-7">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-zero" role="tabpanel" aria-labelledby="list-zero-list">
+                  <p>
+                    The Bible, rather than being a book in the traditional sense we think of, is a collection of writings by different authors, from different time periods, with different views and agendas.
+                  </p>
+                  <p>
+                    These books are usually organized into three major sections:
+                  </p>
+                  <ul>
+                    <li>
+                      the <i>Hebrew Bible</i> (generally known to Christians as the <i>Old Testament</i>),
+                    </li>
+                    <li>the <i>Apocrypha</i> (which tends to be sort of pushed aside), and
+                    </li>
+                    <li>the <i>New Testament</i> (the part written by early Christians).
+                    </li>
+                  </ul>
+                  <p>
+                    Use the tab selector to find out more!
+                  </p>
+                  <p>
+                    Or navigate directly to the pages:
+                    <a href="hebrewbible.html" class="navbutton withintext">Hebrew Bible</a>
+                    <a href="apocrypha.html" class="navbutton withintext">Apocrypha</a>
+                    <a href="newtestament.html" class="navbutton withintext">New Testament</a>
+                  </p>
+                </div>
+                <div class="tab-pane fade" id="list-one" role="tabpanel" aria-labelledby="list-one-list">
+                  <p>The Hebrew Bible, known to Christians as the Old Testament, is a collection of ancient Hebrew writings, most of them composed in the 8th through 2nd centuries BCE, mostly in ancient Hebrew, with some of the later parts composed in Aramaic.
+                    </p>
+                    <p>
+                      Topics, points of view, even genres vary, from the mythological and legendary tales such as those found in Genesis and Exodus, to more historical narratives of Samuel and Kings, to prophetical verse or prose such as in Isaiah or Ezekiel, to the praiseful poems of Psalms, to short stories such as Esther or Ruth, and plenty others.
+                    </p>
+                    <br>
+                  <div class="link-to-articles">
+                    <a href="hebrewbible.html" class="btn outlinedbtn btn-outline-dark">
+                      Read more
+                    </a>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="list-two" role="tabpanel" aria-labelledby="list-two-list">
+                  <p>
+                    In Christianity, Apocrypha usually refers to a collection of writings written roughly between the 2nd century BCE and the 1st century CE, usually not considered fully “canonical”, but important enough to have been printed as its own separate section inbetween the “testaments” in most Bibles, although many modern printings omit this section.
+                  </p>
+                  <p>
+                    Some or all of these texts are considered fully canonical in some denominations of Christianity (see comparison between Protestant and Catholic Old Testaments in my Hebrew Bible page).
+                  </p>
+                  <br>
+                  <div class="link-to-articles">
+                    <a href="apocrypha.html"  class="btn outlinedbtn btn-outline-dark">
+                      Read more
+                    </a>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="list-three" role="tabpanel" aria-labelledby="list-three-list">
+                  <p>
+                    The New Testament is a collection of writings composed in the second half of the 1st century through the beginning of the 2nd century CE. Composed in Koine Greek, these texts include stories about Jesus of Nazareth and letters circulated among early Christian communities.
+                  </p>
+                  <br>
+                  <div class="link-to-articles">
+                    <a href="newtestament.html" class="btn outlinedbtn btn-outline-dark">
+                      Read more
+                    </a>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="list-four" role="tabpanel" aria-labelledby="list-four-list">other text</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box-o-text text-next">
+            <p>
+              
+              <a href="about.html" class="navbutton withintext">about page</a>?
+            </p>
+            
+          </div>
+
+        </div>
+      </main>
+    <footer>
+      <div class="bottom-of-page">
+          Thank you CS50 <a href="https://cs50.harvard.edu/x/2024/" id="footerlink">🐈</a>
+      </div>
+  </footer>
+  <script src="script.js"></script>
+    </body>
+</html>

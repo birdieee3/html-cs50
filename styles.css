@@ -1,0 +1,412 @@
+/*
+was gonna add accordion or something like that in the pages but couldnt figure out how to customize bootstrap there unfortunately
+what i probably wanna do is see somebody elses process of doing that:
+adding a bootstrap thingy but also having their own design language
+or perhaps they dont even use bootstrap? idk
+or perhaps they dont edit their pages like this and use some other software, i wonder what week 9 is about, we'll see
+*/
+body {
+    background-color: beige;
+    color: black;
+    font-family: verdana;
+}
+.dark-mode {
+    background-color: #222831;
+    color: white;
+}
+h4 {
+    text-align: center;
+    text-decoration: underline;
+}
+h5 {
+    text-align: center;
+    color: grey;
+    font-style: italic;
+}
+
+.body-with-content {
+    background-color: white;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: 3px solid lightgrey;
+    border-radius: 5px;
+    color: black;
+
+}
+.dark-content {
+    background-color: black;
+    color: white;
+}
+
+
+.list-group-item-action {
+    background-color: khaki;
+    /*width: 300px;*/
+    text-align: center;
+}
+.list-group-item-action.active {
+    background-color: orange;
+    border: teal;
+}
+.list-group-item-action:hover {
+    background-color: darkkhaki;
+}
+.list-group-item-action.active:hover {
+    background-color: darkorange;
+}
+/* .col-4 {
+    width: 24%;
+    margin-left: 0.5%;
+}
+.col-8 {
+    width: 70%;
+}
+
+.btn {
+    align: right;
+}
+    */
+.link-to-articles {
+    text-align: center;
+
+}
+
+.top-of-page-content {
+    padding: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-style: solid;
+    color: orange;
+    border-color: darkorange;
+    text-align: center;
+    position: relative;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+/*#list-zero-list {
+    border-bottom: 3px solid teal;
+}*/
+
+
+/*    we want to perhaps set a max width for the about buttons!!!!   */
+.box-o-text {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+}
+.box-o-text.text-first {
+    border-bottom: solid 2px lightgrey;
+}
+.box-o-text.text-second {
+    padding-top: 3%;;
+}
+
+.box-o-text.text-next {
+    border-top: solid 2px lightgrey;
+}
+
+.canon-selector {
+    background-color: ghostwhite;
+    color: black;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 1%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.canon-selector-dark {
+    background-color: #222831;
+    color: white;
+
+}
+/*#canon-selector {
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    padding: 10px;
+    padding-top: 5%;
+}*/
+
+.bottom-of-page {
+    padding: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: grey;
+    text-align: center;
+    position: relative;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+/*main.col-lg {
+    max-width: 80rem;
+    overflow: auto;
+    padding: 4rem 2rem;
+}
+aside.col-lg {
+
+}*/
+nav {
+    position: relative;
+}
+.previous {
+    float: left;
+}
+.next {
+    float:right;
+}
+.navbutton {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    color: darkorange;
+    border-radius: 3%;
+
+  }
+.darkbutton {
+    background-color: #2d4059;
+}
+.navbutton.withintext {
+    padding: 4px 8px;
+}
+.navbutton:hover {
+    background-color: #ddd;
+    color: darkorange;
+}
+
+/* list of books */
+
+#justaline {
+    padding-top: 0;
+}
+
+.booklist {
+    text-align: center;
+    padding-bottom: 5%;
+
+}
+
+.booklist-lg {
+    display: block;
+}
+.booklist-sm {
+    display: none;
+    border: teal dotted;
+}
+@media screen and (max-width: 500px) {
+    .booklist-lg {
+        display: none;
+    }
+    .booklist-sm {
+        display: block;
+    }
+}
+
+.btn-book {
+    border-radius: 50px;
+}
+.btn-torah {
+    background-color: seagreen;
+    border: none;
+}
+.btn-torah:hover {
+    background-color: seagreen;
+}
+.btn-prophets {
+    background-color: violet;
+    border: none;
+}
+.btn-prophets:hover {
+    background-color: violet;
+}
+.btn-writings {
+    background-color: skyblue;
+    border: none;
+}
+.btn-writings:hover {
+    background-color: skyblue;
+}
+.btn-apocrypha {
+    background-color: orangered;
+    border: none;
+}
+.btn-apocrypha:hover {
+    background-color: orangered;
+}
+.not-border-separated {
+    border-bottom: white;
+}
+
+.booklist-heading {
+    color: darkorange;
+    font-size: 120%;
+    text-decoration:none;
+}
+.booklist-heading:hover {
+    color: orange;
+}
+.smallheading {
+    font-size: 100%;
+    font-style: italic;
+}
+.smallnote {
+    position:absolute;
+    color:red;
+    font-size:60%;
+    text-decoration:none;
+}
+.smallblacknote {
+    position:absolute;
+    color:black;
+    font-size:60%;
+    text-decoration:none;
+}
+.smallnote:hover {
+    text-decoration:none;
+    color:red;
+}
+.smallblacknote:hover {
+    text-decoration:none;
+    color:black;
+}
+#footerlink {
+    text-decoration: none;
+    font-size:200%;
+}
+
+/* the following two i found here: https://stackoverflow.com/questions/7737557/how-can-i-make-the-youtube-player-scale-to-the-width-of-the-page-but-also-keep-t
+and modified (maybe butchered lol?) somewhat */
+.auto-resizable-iframe {
+    max-width: 420px;
+    margin: 0px auto;
+  }
+
+  .auto-resizable-iframe iframe {
+    position: relative;
+    min-height: 315px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 150%;
+  }
+
+/* new testament table */
+
+.legend {
+    text-align:center;
+    color: darkgrey;
+}
+.nt-books {
+    position:relative;
+    display:block;
+    height:650px;
+  }
+  #axis-label {
+    position: absolute;
+    font-size: 75%;
+    color: magenta;
+  }
+
+  .axis {
+    position:absolute;
+    top: 20px;
+  }
+  .axis table {
+    position: absolute;
+    top: 70px;
+    left: 25px;
+  }
+  .axis table td {
+    font-size: 75%;
+    color: grey;
+    padding-bottom: 64px;
+  }
+
+  .axis canvas {
+
+  }
+  .not-axis {
+    position: absolute;
+    left: 100px;
+  }
+.not-axis table {
+    margin-top: 50px;
+}
+.not-axis table td {
+    padding-right: 0px;
+}
+
+ .btn-cat-1-a /* gospel */ {
+    background-color: #ff9c6d;
+    white-space:nowrap;
+}
+
+ .btn-cat-1-b /* acts */ {
+    background-color: #fd5959;
+    white-space:nowrap;
+}
+
+ .btn-cat-1-c /* letters */ {
+    background-color: #afc5ff;
+    white-space:nowrap;
+}
+
+ .btn-cat-1-d /* other? */ {
+    background-color: #fd5959;
+    white-space:nowrap;
+}
+ .btn-cat-x {
+    background-color: white;
+    border-color: white;
+    border-width: 2px;
+ }
+ .btn-cat-x:hover {
+    background-color: white;
+    border-color: white;
+ }
+
+.btn-cat-2-a /* authored */ {
+    border-color: black;
+    border-width: 2px;
+}
+
+.btn-cat-2-b /* pseudepigraphic */ {
+    border-color: red;
+    border-width: 2px;
+}
+
+.btn-cat-2-c /* anonymous */ {
+    border-color: green;
+    border-width: 2px;
+}
+.btn-cat-2-x {
+    border-color: transparent;
+}
+
+@media screen and (min-width: 730px) and (max-width: 869px) {
+    #scaling-test {
+        zoom: 0.7;
+    }
+}
+@media screen and (min-width: 870px) and (max-width: 1040px) {
+    #scaling-test {
+        zoom: 0.8;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 729px) {
+    #scaling-test {
+        zoom: 0.6;
+    }
+}
+@media screen and (max-width: 599px) {
+    #scaling-test {
+        zoom: 0.39;
+    }
+}
+
+
+
+.apocrypha-list a {
+    margin: 5px;
+}
